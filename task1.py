@@ -1,8 +1,8 @@
 class Rectangle:
 
     def __init__(self, length=1.0, width=1.0):
-        self.__length = length
-        self.__width = width
+        self.length = length
+        self.width = width
 
     def __str__(self):
         return f"{self.__width} x {self.__length}"
