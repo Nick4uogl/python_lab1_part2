@@ -18,11 +18,11 @@ class Student:
 
 
 class Group:
-    max_students = 20
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, max_students: int):
         self.__group_name = name
         self.__group = []
+        self.max_students = max_students
 
     def print_group(self):
         for student in self.__group:
@@ -48,7 +48,7 @@ class Group:
         return average_list[-5:]
 
 
-group1 = Group("TB-12")
+group1 = Group("TB-12", 20)
 student1 = Student("Rick", "Astley", 0, [5, 5, 5, 5])
 print(student1)
 group1.add_student(Student("Rick", "Astley", 0, [5, 5, 5, 5]))
