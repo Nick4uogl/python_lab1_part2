@@ -7,7 +7,7 @@ class Product:
         self.description = description
 
     def __str__(self):
-        print(f"{self.product} price:{self.price} description:{self.description}")
+        return print(f"{self.product} price:{self.price} description:{self.description}")
 
 
 class Customer:
@@ -18,7 +18,7 @@ class Customer:
         self.mobile = mobile
 
     def __str__(self):
-        print(f"{self.surname} {self.name} {self.patronymic} mobile: {self.mobile}")
+        return print(f"{self.surname} {self.name} {self.patronymic} mobile: {self.mobile}")
 
 
 class Order:
@@ -41,7 +41,7 @@ class Order:
         return sum(product.price * self.products[product] for product in self.products)
 
     def __str__(self):
-        print(f"{self.customer} {self.products}")
+        return print(f"{self.customer} {self.products}")
 
 
 customer1 = Customer("Nick", "Pylypchuk", "Igorovych", '+380960981783')
