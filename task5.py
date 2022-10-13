@@ -40,9 +40,7 @@ class Group:
         self.__group.append(student)
 
     def calculate_highest(self):
-        average_list = []
-        for student in self.__group:
-            average_list.append(student)
+        average_list = self.__group[:]
 
         average_list.sort(key=lambda student: student.calculate_average())
         return average_list[-5:]
